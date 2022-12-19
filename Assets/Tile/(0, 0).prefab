@@ -278,6 +278,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5557841401510689242}
   - component: {fileID: 3495133844329871803}
+  - component: {fileID: 4619517998912219093}
   m_Layer: 0
   m_Name: (0, 0)
   m_TagString: Untagged
@@ -314,3 +315,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4a42d8148403284baa5b6d02ecec38d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlacebale: 1
+  towerPrefab: {fileID: 1307900707547382, guid: 1c646272db9f13f40a1cc8d87b080552, type: 3}
+--- !u!65 &4619517998912219093
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5557841401510689241}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.518966, y: 0.40477276, z: 12.642338}
+  m_Center: {x: -0.051743984, y: -1.01, z: -1.43256}
