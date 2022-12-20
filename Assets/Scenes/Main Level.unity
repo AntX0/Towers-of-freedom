@@ -2922,7 +2922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyPrefab: {fileID: 4220048939946278853, guid: 8f0b34c9f77218746882307414ca2d72, type: 3}
-  _poolSize: 5
+  _poolSize: 10
   _spawnRate: 2
 --- !u!4 &1991607124
 Transform:

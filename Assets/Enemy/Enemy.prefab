@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4307017605253929725}
   - component: {fileID: 236967124}
   - component: {fileID: 8552538280674758800}
+  - component: {fileID: 5180695639148038336}
   - component: {fileID: 7478712227295031865}
   m_Layer: 0
   m_Name: Enemy
@@ -104,6 +105,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHitPoints: 5
+  isDead: 0
+--- !u!114 &5180695639148038336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4220048939946278853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fc011eadbdfdc940809671809956a88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &7478712227295031865
 BoxCollider:
   m_ObjectHideFlags: 0
