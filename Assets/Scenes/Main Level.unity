@@ -1736,6 +1736,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 236967124, guid: 8f0b34c9f77218746882307414ca2d72, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 236967124, guid: 8f0b34c9f77218746882307414ca2d72, type: 3}
       propertyPath: _enemySpeed
       value: 1.06
       objectReference: {fileID: 0}
@@ -1822,6 +1826,10 @@ PrefabInstance:
     - target: {fileID: 4220048939946278853, guid: 8f0b34c9f77218746882307414ca2d72, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8552538280674758800, guid: 8f0b34c9f77218746882307414ca2d72, type: 3}
+      propertyPath: maxHitPoints
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f0b34c9f77218746882307414ca2d72, type: 3}

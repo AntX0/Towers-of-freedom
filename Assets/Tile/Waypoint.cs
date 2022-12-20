@@ -5,7 +5,10 @@ using UnityEngine;
 public class Waypoint : MonoBehaviour
 {
     [SerializeField] bool isPlacebale;
+    public bool IsPlacebale => isPlacebale;
+
     [SerializeField] GameObject towerPrefab;
+   
 
     private void OnMouseDown()
     {

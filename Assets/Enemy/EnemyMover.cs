@@ -24,6 +24,7 @@ public class EnemyMover : MonoBehaviour
 
             while (travelPercent < 1f) 
             {
+                if(GetComponent<EnemyHealth>().IsDead) { _enemySpeed = 0; }
                 travelPercent += Time.deltaTime * _enemySpeed;
                 transform.position = Vector3.Lerp(startPosition, endPosition, travelPercent);
                 yield return new WaitForEndOfFrame();
