@@ -22,8 +22,8 @@ public class EnemyHealth : MonoBehaviour
 
     private void ApplyDamage()
     {
-        currentHitPoints -= 1;
         GetComponent<Animator>().SetTrigger("Take Damage");
+        currentHitPoints -= 1;
 
         if (currentHitPoints <= 0)
         {

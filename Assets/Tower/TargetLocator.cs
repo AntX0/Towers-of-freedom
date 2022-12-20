@@ -35,11 +35,12 @@ public class TargetLocator : MonoBehaviour
 
     private void AimWeapon()
     {
+        if (target == null) { return; }    
         float targetDistance = Vector3.Distance(transform.position, target.transform.position);
 
         transform.LookAt(target);
-
-        if(targetDistance < range)
+        
+        if (targetDistance < range)
         {
             Attack(true);
         }
