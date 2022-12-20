@@ -47,6 +47,7 @@ public class ObjectPool : MonoBehaviour
             if (pool[i].activeInHierarchy == false)
             {
                 pool[i].SetActive(true);
+                /*GetComponent<EnemyHealth>().IsDead= false;*/
                 return;
             }
         }

@@ -33,9 +33,9 @@ public class EnemyHealth : MonoBehaviour
 
     private void KillEnemy()
     {
-        if (IsDead) { return; }
+      /*  if (isDead) { return; }*/
         GetComponent<Animator>().SetTrigger("Die");
         gameObject.SetActive(false);
-        isDead = true;
+       /* isDead = true;*/
     }
 }

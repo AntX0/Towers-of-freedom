@@ -266,6 +266,7 @@ MonoBehaviour:
   target: {fileID: 0}
   range: 15
   projectileParticles: {fileID: 3847131283808647335}
+  _rotationSpeed: 10
 --- !u!1 &1339958309788442
 GameObject:
   m_ObjectHideFlags: 0

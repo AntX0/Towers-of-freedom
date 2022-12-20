@@ -8,6 +8,7 @@ public class TargetLocator : MonoBehaviour
     [SerializeField] Transform target;
     [SerializeField] float range;
     [SerializeField] ParticleSystem projectileParticles;
+    [SerializeField] private float _rotationSpeed;
 
     void Update()
     {
@@ -37,8 +38,11 @@ public class TargetLocator : MonoBehaviour
     {
         if (target == null) { return; }    
         float targetDistance = Vector3.Distance(transform.position, target.transform.position);
-
-        transform.LookAt(target);
+        Vector3 directionToTarget = target.position - transform.position;
+        Quaternion lookAtRotation = Quaternion.LookRotation(directionToTarget);
+        Vector3 rotation = Quaternion.Lerp(weapon.rotation, lookAtRotation, Time.deltaTime*_rotationSpeed).eulerAngles;
+        weapon.rotation = Quaternion.Euler(0f, rotation.y, 0f);
+        
         
         if (targetDistance < range)
         {
