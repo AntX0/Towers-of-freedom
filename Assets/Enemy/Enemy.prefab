@@ -91,7 +91,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  _enemySpeed: 1
+  _enemySpeed: 0.5
 --- !u!114 &8552538280674758800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,7 +104,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d312f2bf0e30c9e47980b14a116b5ab8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHitPoints: 3
+  maxHitPoints: 2
+  difficultyRamp: 2
   isDead: 0
 --- !u!114 &5180695639148038336
 MonoBehaviour:
