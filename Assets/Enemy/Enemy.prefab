@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d312f2bf0e30c9e47980b14a116b5ab8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHitPoints: 5
+  maxHitPoints: 3
   isDead: 0
 --- !u!114 &5180695639148038336
 MonoBehaviour:
@@ -118,6 +118,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fc011eadbdfdc940809671809956a88, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _goldReward: 25
+  _goldPenalty: 15
 --- !u!65 &7478712227295031865
 BoxCollider:
   m_ObjectHideFlags: 0

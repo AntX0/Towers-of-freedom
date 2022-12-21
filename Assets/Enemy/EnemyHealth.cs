@@ -10,9 +10,16 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] bool isDead;
     public bool IsDead => isDead;
 
+    Enemy enemy;
+
     void OnEnable()
     {
         currentHitPoints = maxHitPoints;
+    }
+
+    private void Start()
+    {
+        enemy = GetComponent<Enemy>();
     }
 
     private void OnParticleCollision(GameObject other)
@@ -36,6 +43,7 @@ public class EnemyHealth : MonoBehaviour
       /*  if (isDead) { return; }*/
         GetComponent<Animator>().SetTrigger("Die");
         gameObject.SetActive(false);
+        enemy.RewardGold();
        /* isDead = true;*/
     }
 }

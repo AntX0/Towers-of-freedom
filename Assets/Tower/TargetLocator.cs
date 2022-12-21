@@ -36,22 +36,28 @@ public class TargetLocator : MonoBehaviour
 
     private void AimWeapon()
     {
-        if (target == null) { return; }    
+        if (target == null) { return; }
+
         float targetDistance = Vector3.Distance(transform.position, target.transform.position);
-        Vector3 directionToTarget = target.position - transform.position;
-        Quaternion lookAtRotation = Quaternion.LookRotation(directionToTarget);
-        Vector3 rotation = Quaternion.Lerp(weapon.rotation, lookAtRotation, Time.deltaTime*_rotationSpeed).eulerAngles;
-        weapon.rotation = Quaternion.Euler(0f, rotation.y, 0f);
         
-        
+
         if (targetDistance < range)
         {
+            RotateAtTarget();
             Attack(true);
         }
         else
         {
             Attack(false);
         }
+    }
+
+    private void RotateAtTarget()
+    {
+        Vector3 directionToTarget = target.position - transform.position;
+        Quaternion lookAtRotation = Quaternion.LookRotation(directionToTarget);
+        Vector3 rotation = Quaternion.Lerp(weapon.rotation, lookAtRotation, Time.deltaTime * _rotationSpeed).eulerAngles;
+        weapon.rotation = Quaternion.Euler(0f, rotation.y, 0f);
     }
 
     private void Attack(bool isActive)
