@@ -30,7 +30,7 @@ public class EnemyMover : MonoBehaviour
 
         foreach (Transform child in parent.transform)
         {
-            Waypoint waypoint= child.GetComponent<Waypoint>();
+            Waypoint waypoint = child.GetComponent<Waypoint>();
 
             if (waypoint != null)
             {
