@@ -1,8 +1,8 @@
 using UnityEngine;
 using TMPro;
-using System;
 
 [ExecuteAlways]
+[RequireComponent(typeof(TextMeshPro))]
 public class CoordinateLabel : MonoBehaviour
 {
     [SerializeField] Color defaultColor = Color.white;
@@ -16,6 +16,7 @@ public class CoordinateLabel : MonoBehaviour
     {
         label= GetComponent<TextMeshPro>();
         label.enabled = false;
+
         waypoint = GetComponentInParent<Waypoint>();
         DisplayCoordinates();
     }
@@ -29,7 +30,7 @@ public class CoordinateLabel : MonoBehaviour
         }
 
         ToggleLabels();
-        ColorCoordinates();
+        SetLabelColor();
     }
 
     private void ToggleLabels()
@@ -40,7 +41,7 @@ public class CoordinateLabel : MonoBehaviour
         }
     }
 
-    private void ColorCoordinates()
+    private void SetLabelColor()
     {
         if (waypoint.IsPlacebale)
         {

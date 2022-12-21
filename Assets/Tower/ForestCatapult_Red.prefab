@@ -280,6 +280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b763203f8defe64fa51df52b3a072bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _cost: 50
 --- !u!1 &1339958309788442
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,7 +342,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611001902292046}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0054436, y: -0.47558, z: 0.035554}
+  m_LocalPosition: {x: 0.0054436, y: -0.07, z: 0.035554}
   m_LocalScale: {x: 1.99, y: 1.99, z: 1.99}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -525,7 +526,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1663784380544388}
   m_LocalRotation: {x: 0.04288584, y: -0, z: -0, w: 0.99908}
-  m_LocalPosition: {x: 0.0054436, y: 1.7105, z: 1.6723}
+  m_LocalPosition: {x: 0.0054436, y: 2.12, z: 1.6723}
   m_LocalScale: {x: 0.37626672, y: 0.37626672, z: 0.37626672}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1024,7 +1025,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.88
+      scalar: 1.02
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -1077,7 +1078,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 9.17
+      scalar: 11.15
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -1509,7 +1510,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 1
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -1775,7 +1776,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.64
+      scalar: 0.7
       minScalar: 10
       maxCurve:
         serializedVersion: 2

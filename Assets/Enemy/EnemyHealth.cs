@@ -1,11 +1,11 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Enemy))]
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] int maxHitPoints = 5;
+    [Tooltip("Add amount to maxHitPoint when enemy dies")]
+    [SerializeField] int difficultyRamp = 1;
     int currentHitPoints = 0;
     [SerializeField] bool isDead;
     public bool IsDead => isDead;
@@ -35,6 +35,7 @@ public class EnemyHealth : MonoBehaviour
         if (currentHitPoints <= 0)
         {
             KillEnemy();
+            maxHitPoints += difficultyRamp;
         }
     }
 
